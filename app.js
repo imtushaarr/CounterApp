@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('decreaseBtn').addEventListener('click', function() {
-        currentValue--;
+         if (currentValue > 0){
+            currentValue--
+        };
         updateCounter();
     });
 });
